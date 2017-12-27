@@ -50,6 +50,7 @@ private extension ViewController {
     }
 }
 
+// MARK: Level Buttons
 extension ViewController {
     @objc func onEasyTapped(sender: UIButton) {
         newGameDifficulty(difficulty: .Easy)

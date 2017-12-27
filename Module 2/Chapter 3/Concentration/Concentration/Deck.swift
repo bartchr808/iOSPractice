@@ -48,7 +48,7 @@ struct Card: CustomStringConvertible, Equatable {
     private let rank: Rank
     private let suit: Suit
     
-    // !!!: Why do I need to write this? Why is `init` private?
+    // !!!: Why do I need to write this? Why is `init` private? Shouldn't this be created on default?
     init(rank: Rank, suit: Suit) {
         self.rank = rank
         self.suit = suit

@@ -16,19 +16,18 @@ class MemoryViewController: UIViewController {
     private var numberOfPairs = 0
     private var score = 0
     
-    // not used
     init(difficulty: Difficulty) {
         self.difficulty = difficulty
         self.deck = Deck()
         super.init(nibName: nil, bundle: nil)
         self.deck = createDeck(numCards: numCardsNeededDifficulty(difficulty: difficulty))
-        for i in 0..<deck.count {
+        /*for i in 0..<deck.count {
             print("The card at index \(i) is [\(deck[i]!.description)]")
-        }
+        }*/
     }
     
     // required by UIViewController
-    required init?(coder aDecoder: NSCoder) { // for hn
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -135,14 +134,15 @@ extension MemoryViewController: UICollectionViewDataSource {
 // MARK: UICollectionViewDelegate
 extension MemoryViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if (selectedIndexes.count == 2 || selectedIndexes.contains(indexPath as NSIndexPath)) {
+        guard !(selectedIndexes.count == 2 || selectedIndexes.contains(indexPath as NSIndexPath)) else {
             return
         }
+        
         selectedIndexes.append(indexPath as NSIndexPath)
         let cell = collectionView.cellForItem(at: indexPath) as! CardCell
         cell.upturn()
         
-        if (selectedIndexes.count < 2) {
+        guard !(selectedIndexes.count < 2) else {
             return
         }
         
@@ -174,7 +174,7 @@ private extension MemoryViewController {
     }
     
     func removeCards() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.removeCardsAtPlaces(places: self.selectedIndexes)
             self.selectedIndexes = []
         }
@@ -187,7 +187,7 @@ private extension MemoryViewController {
     }
     
     func turnCardsFaceDown() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.downturnCardsAtPlaces(places: self.selectedIndexes)
             self.selectedIndexes = []
         }

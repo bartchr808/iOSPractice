@@ -14,9 +14,7 @@ class CardCell: UICollectionViewCell {
     private var backImageName: String!
     
     override init(frame: CGRect) {
-        frontImageView = UIImageView(frame: CGRect(
-        origin: CGPoint.zero,
-        size: frame.size))
+        frontImageView = UIImageView(frame: CGRect(origin: CGPoint.zero, size: frame.size))
         super.init(frame: frame)
         contentView.addSubview(frontImageView)
         contentView.backgroundColor = UIColor.clear
@@ -34,14 +32,14 @@ class CardCell: UICollectionViewCell {
     }
     
     func upturn() {
-        UIView.transition(with: contentView, duration: 1, options: .transitionFlipFromRight, animations: { self.frontImageView.image = UIImage(named: self.cardImageName) }, completion: nil)
+        UIView.transition(with: contentView, duration: 0.5, options: .transitionFlipFromRight, animations: { self.frontImageView.image = UIImage(named: self.cardImageName) }, completion: nil)
     }
     
     func downturn() {
-        UIView.transition(with: contentView, duration: 1, options: .transitionFlipFromLeft, animations: { self.frontImageView.image = UIImage(named: self.backImageName) }, completion: nil)
+        UIView.transition(with: contentView, duration: 0.5, options: .transitionFlipFromLeft, animations: { self.frontImageView.image = UIImage(named: self.backImageName) }, completion: nil)
     }
     
     func remove() {
-        UIView.animate(withDuration: 1, animations: { self.alpha = 0 }, completion: { completed in self.isHidden = true })
+        UIView.animate(withDuration: 0.5, animations: { self.alpha = 0 }, completion: { completed in self.isHidden = true })
     }
 }
