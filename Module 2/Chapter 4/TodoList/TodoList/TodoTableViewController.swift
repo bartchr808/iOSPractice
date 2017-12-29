@@ -7,89 +7,135 @@
 //
 
 import UIKit
+import MGSwipeTableCell
 
 @objc(TodoTableViewController)
 class TodoTableViewController: UITableViewController {
+    
+    private var todosDataStore: TodosDataStore?
+    private var todos: [Todo]?
+    private var selectedTodo: Todo?
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        refresh()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        title = "Todos"
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    // MARK: - Internal Functions
+    private func refresh() {
+        if let todosDataStore = todosDataStore {
+            todos = todosDataStore.todos().sorted{
+                $0.dueDate.compare($1.dueDate as Date) == ComparisonResult.orderedAscending
+            }
+            tableView.reloadData()
+        }
+    }
+    
+    // MARK: - Configure
+    func configure(todosDataStore: TodosDataStore) {
+        self.todosDataStore = todosDataStore
     }
 
     // MARK: - Table view data source
-
-    /*override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }*/
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return todos?.count ?? 0
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TodoCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TodoCell", for: indexPath) as! MGSwipeTableCell
         
-        cell.textLabel?.text = "Todo number \(indexPath.row)"
-
+        if let todo = todos?[indexPath.row] {
+            renderCell(cell: cell, todo: todo)
+            setupButtonsForCell(cell: cell, todo: todo)
+        }
+        
         return cell
     }
     
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    // MARK: Cell Helpers
+    private func renderCell(cell: UITableViewCell, todo: Todo) {
+        let dateFormatter:DateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm dd-MM-YY"
+        let dueDate = dateFormatter.string(from: todo.dueDate as Date)
+        cell.detailTextLabel?.text = "\(dueDate) | \(todo.list.description)"
+        cell.textLabel?.text = todo.description
+        cell.accessoryType = todo.done ? .checkmark : .none
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    
+    private func setupButtonsForCell(cell: MGSwipeTableCell, todo: Todo) {
+        cell.rightButtons = [
+            MGSwipeButton(title: "Edit", backgroundColor: .blue, padding: 30) {
+                [weak self] sender in
+                self?.editButtonPressed(todo: todo)
+                return true
+            },
+            MGSwipeButton(title: "Delete", backgroundColor: .red, padding: 30) {
+                [weak self] sender in
+                self?.deleteButtonPressed(todo: todo)
+                return true
+            },
+            MGSwipeButton(title: "Done", backgroundColor: .green, padding: 30) {
+                [weak self] sender in
+                self?.doneButtonPressed(todo: todo)
+                return true
+            }
+        ]
+        cell.leftExpansion.buttonIndex = 0
     }
-    */
+}
 
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
+// MARK: - Actions
+extension TodoTableViewController {
+    @IBAction func addTodoButtonPressed(sender: AnyObject!) {
+        performSegue(withIdentifier: "addTodo", sender: self)
     }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
+    
+    func editButtonPressed(todo: Todo){
+        selectedTodo = todo
+        performSegue(withIdentifier: "editTodo", sender: self)
     }
-    */
+    
+    func deleteButtonPressed(todo: Todo) {
+        todosDataStore?.deleteTodo(todo: todo)
+        refresh()
+    }
+    
+    func doneButtonPressed(todo: Todo) {
+        todosDataStore?.doneTodo(todo: todo)
+        refresh()
+    }
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+// MARK: Segue
+extension TodoTableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        guard let identifier = segue.identifier, let destinationViewController = segue.destination as? EditTodoTableViewController else {
+            return
+        }
+        
+        destinationViewController.todosDataStore = todosDataStore
+        destinationViewController.todoToEdit = selectedTodo
+        
+        switch identifier {
+            case "addTodo":
+                destinationViewController.title = "New Todo"
+            case "editTodo":
+                destinationViewController.title = "Edit Todo"
+            default:
+                break
+        }
     }
-    */
-
 }

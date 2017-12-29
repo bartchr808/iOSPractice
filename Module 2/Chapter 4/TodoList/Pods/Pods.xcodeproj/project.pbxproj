@@ -1,0 +1,1203 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C98CFEC996DEEB10E39FC50845A3D21 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11144622FAF1E0B16793A87E4D324152 /* Lato-Italic.ttf */; };
+		112B3AE3695C10E75BD89585295481AB /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A62B0425A1B26A0FAC0FED4175E48504 /* MGSwipeButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1E2EF3335CEC115B1676E4493F94D2F4 /* Pods-TodoList-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F746623CCD6978028FE78FC499B2EC77 /* Pods-TodoList-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DDE6582B79F9FACEC96939D6E8F4AEE /* LatoFont.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9AC1940EFDF2211BD7DC44C1FEAC0 /* LatoFont.bundle */; };
+		400DA4F276146C7F37E900BACA6EF41A /* Pods-TodoListUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD4630AC5A80AABAC470FDD8F0771022 /* Pods-TodoListUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		408C8CBBF21A749B36F7F1A5AF805EF9 /* Pods-TodoList-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D60D550997D7B75E7156CFCB8CB13FA3 /* Pods-TodoList-dummy.m */; };
+		499FF33C0104375324BF5D5B63A22422 /* UIFont+Lato.h in Headers */ = {isa = PBXBuildFile; fileRef = 29EE96FFF44DC61DF6CEB58622AB792D /* UIFont+Lato.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63B8D5E8DA289CB9C05813E23D9C2707 /* Pods-TodoListUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 639EDA4145136E3ABCCFB7730AC1A9D7 /* Pods-TodoListUITests-dummy.m */; };
+		6C789E04E2AA8AA38BC54F97FCCB94E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BE1AF8CEE8818CBCFD0010AE8BEE51 /* UIKit.framework */; };
+		6CA804342026C8DD0D47F82901AE587D /* MGSwipeTableCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E118E5539570E4AD112D83533A6FD1 /* MGSwipeTableCell-dummy.m */; };
+		7AE1D4765B31AC40AF3D774705CD04FC /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9192EFBB0F06A7154ED87FC0DF62B24D /* Lato-HairlineItalic.ttf */; };
+		81647662CCA47E5E86BB59090D7F95E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		82ED0C7CC376B8FFC2E8A7E81074B17C /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95D2F727C4369A6D60D49D0FCB7B8316 /* Lato-Light.ttf */; };
+		853A57622AD74BC28B636A4BA38E6873 /* MGSwipeTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 92E4853C02CE1A1A41856B24F45BF503 /* MGSwipeTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87015FBC04C616C1285E60A47D25419A /* UIFont+Lato.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F7DAB575068EE15E039E848C1D4E23 /* UIFont+Lato.m */; };
+		87408956E94C43398E23C61433C2757A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55C580E1FC5B6E9F442FE42A9553FEA /* CoreText.framework */; };
+		87D1792AEFA51D19AA5EE9DB74E4517E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		89AB2AE681A8B73DCAFB0D9A2E44AB93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		90F5892B40BD38B69E8D88C958373A8A /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4C1ABD44863E8BC373D8F410778406D /* Lato-BoldItalic.ttf */; };
+		938FB262A8F31934EA530F1AB86A3F3A /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 032491412929F778B67F0C92564FABAF /* Lato-BlackItalic.ttf */; };
+		9BCEC4AFD1B01B3597D567FE0AB0BC44 /* LatoFont-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E1F378BF93225409D34116BA2414EA2 /* LatoFont-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A641892548994B7BDCBB6BCC9383C524 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67DF80B83C3B09ABF5579FBA2551DA01 /* Lato-LightItalic.ttf */; };
+		B2E4E6A261F20F48A7B7E0F50AFAD415 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD23CBF3DC34CFC586DC86F96F4D89BE /* Lato-Regular.ttf */; };
+		B7ACC8CC7477580B12B4BE938EE0F8E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		BFA6B53A709CB76C3EA03E5CA68A605F /* LatoFont-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D842A4754A09F846150196C9C686C86C /* LatoFont-dummy.m */; };
+		C9BB9572D929D9F65BD27F9AB29562EB /* MGSwipeTableCell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 266191FB3E3572DE4A01C5953895CC71 /* MGSwipeTableCell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAC2C9F67E42ECAD602108ACCA8706DD /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E77EE86F954B9C322D695CB44EF133F /* Lato-Hairline.ttf */; };
+		CFCACE678B70021485804DA8A3C8ACE4 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA208F77BF16A487FCA915DF39949F48 /* Lato-Black.ttf */; };
+		D3740FAF5C71F37796B1924E1D184414 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		DB33341B93BFF0A556A6F333BE95CFAD /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE176859251BB6ED18F3E7CBB819916 /* MGSwipeTableCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E4BF47046BA4675E1DA2F34893947702 /* MGSwipeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD6EEF57855D5FCC111FC8A5CB31CD3 /* MGSwipeButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE2DEE42051C135B4A982C05E02A5367 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C1A5AE5DE1E24D9A2A34C4DE7294CF2 /* Lato-Bold.ttf */; };
+		F4B625224036B29DC4BD02FE8C319474 /* Pods-TodoListTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B098955CD564658F33776EF9F8488D0 /* Pods-TodoListTests-dummy.m */; };
+		FE810E4917FECB22D6AEA035547CB090 /* Pods-TodoListTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 020595922268D9C342DD96B8E88E9A15 /* Pods-TodoListTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50A850BC869F11CB26EBCFE0B5E9D9B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE8F2EA6BBEA8FD641321B92F8BA8C2B;
+			remoteInfo = "LatoFont-LatoFont";
+		};
+		64B3DB4DEF9F1773AAD24EB926DBE32A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 942A9D7D01CE9FA0F2A9C8C1CC57951C;
+			remoteInfo = LatoFont;
+		};
+		DFCA51E570436C803823686A380C5ED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CD80321715FDB12A3A31B7BCB09EA28;
+			remoteInfo = MGSwipeTableCell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		020595922268D9C342DD96B8E88E9A15 /* Pods-TodoListTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TodoListTests-umbrella.h"; sourceTree = "<group>"; };
+		032491412929F778B67F0C92564FABAF /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Lato-BlackItalic.ttf"; path = "Source/Fonts/Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		03390ADFB4782FFDAE2005C8A58EC11F /* Pods-TodoList-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TodoList-resources.sh"; sourceTree = "<group>"; };
+		043C52A6F1E1CF001161A68455671EF9 /* Pods-TodoList.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TodoList.modulemap"; sourceTree = "<group>"; };
+		0EE176859251BB6ED18F3E7CBB819916 /* MGSwipeTableCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGSwipeTableCell.m; path = MGSwipeTableCell/MGSwipeTableCell.m; sourceTree = "<group>"; };
+		11144622FAF1E0B16793A87E4D324152 /* Lato-Italic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Lato-Italic.ttf"; path = "Source/Fonts/Lato-Italic.ttf"; sourceTree = "<group>"; };
+		1DD9AC1940EFDF2211BD7DC44C1FEAC0 /* LatoFont.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = LatoFont.bundle; path = LatoFont.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		20715D2F3D07AA8A851531F8F217D71E /* Pods-TodoListTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TodoListTests-frameworks.sh"; sourceTree = "<group>"; };
+		266191FB3E3572DE4A01C5953895CC71 /* MGSwipeTableCell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGSwipeTableCell-umbrella.h"; sourceTree = "<group>"; };
+		27BE1AF8CEE8818CBCFD0010AE8BEE51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		29EE96FFF44DC61DF6CEB58622AB792D /* UIFont+Lato.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+Lato.h"; path = "Source/UIFont+Lato.h"; sourceTree = "<group>"; };
+		2B098955CD564658F33776EF9F8488D0 /* Pods-TodoListTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TodoListTests-dummy.m"; sourceTree = "<group>"; };
+		2E3DDF74EE83B8A30EAE185F074167A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35CB576686EF5C8D279432C044054CCE /* Pods-TodoListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TodoListTests.debug.xcconfig"; sourceTree = "<group>"; };
+		38F7DAB575068EE15E039E848C1D4E23 /* UIFont+Lato.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+Lato.m"; path = "Source/UIFont+Lato.m"; sourceTree = "<group>"; };
+		3935890E86F108B19E88313CE3C66358 /* MGSwipeTableCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGSwipeTableCell-prefix.pch"; sourceTree = "<group>"; };
+		3DB35B10F02A61C68D4A551B0FA84CDB /* LatoFont.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LatoFont.framework; path = LatoFont.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E17D07CB39CC6635B11AF8F3901C464 /* MGSwipeTableCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MGSwipeTableCell.framework; path = MGSwipeTableCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44A0DF6C42B860289BA68FEEF6C7A82C /* MGSwipeTableCell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MGSwipeTableCell.modulemap; sourceTree = "<group>"; };
+		4A58420AAF214E33FF0F6FC20F006717 /* Pods-TodoListUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TodoListUITests-resources.sh"; sourceTree = "<group>"; };
+		4E1F378BF93225409D34116BA2414EA2 /* LatoFont-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LatoFont-umbrella.h"; sourceTree = "<group>"; };
+		4E77EE86F954B9C322D695CB44EF133F /* Lato-Hairline.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Lato-Hairline.ttf"; path = "Source/Fonts/Lato-Hairline.ttf"; sourceTree = "<group>"; };
+		54C06CEC496023E4DD71431A744B8365 /* Pods-TodoListTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TodoListTests.modulemap"; sourceTree = "<group>"; };
+		57E118E5539570E4AD112D83533A6FD1 /* MGSwipeTableCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MGSwipeTableCell-dummy.m"; sourceTree = "<group>"; };
+		639EDA4145136E3ABCCFB7730AC1A9D7 /* Pods-TodoListUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TodoListUITests-dummy.m"; sourceTree = "<group>"; };
+		67DF80B83C3B09ABF5579FBA2551DA01 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Lato-LightItalic.ttf"; path = "Source/Fonts/Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		6E97921B7E487947FC605CDC7BF5AE6C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72488EBF8CF3CD9543FF0B3C2B76431D /* Pods-TodoList-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TodoList-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7F20678B9ACC8BF4B15CF0AE6B2FB48F /* Pods_TodoListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TodoListTests.framework; path = "Pods-TodoListTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80C35928D93F30C628DFC0A18F729359 /* MGSwipeTableCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MGSwipeTableCell.xcconfig; sourceTree = "<group>"; };
+		80F75F50805A6F70EB8B550A814A9B57 /* Pods-TodoListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TodoListTests.release.xcconfig"; sourceTree = "<group>"; };
+		85D9CD3210C10007772C76A40ACE73E7 /* Pods-TodoListTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TodoListTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8C1A5AE5DE1E24D9A2A34C4DE7294CF2 /* Lato-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Lato-Bold.ttf"; path = "Source/Fonts/Lato-Bold.ttf"; sourceTree = "<group>"; };
+		8F4DDEABF698C135A743C9E3A52C0F22 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9192EFBB0F06A7154ED87FC0DF62B24D /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Lato-HairlineItalic.ttf"; path = "Source/Fonts/Lato-HairlineItalic.ttf"; sourceTree = "<group>"; };
+		92E4853C02CE1A1A41856B24F45BF503 /* MGSwipeTableCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGSwipeTableCell.h; path = MGSwipeTableCell/MGSwipeTableCell.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95D2F727C4369A6D60D49D0FCB7B8316 /* Lato-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Lato-Light.ttf"; path = "Source/Fonts/Lato-Light.ttf"; sourceTree = "<group>"; };
+		963B09C2F225B771BB9CE71D56661ABD /* Pods-TodoListUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TodoListUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9722CC11F58E2E193650DB99CCB8A503 /* ResourceBundle-LatoFont-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-LatoFont-Info.plist"; sourceTree = "<group>"; };
+		983B7B0117056A1D325FF165DCA5EC0D /* Pods-TodoListUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TodoListUITests-frameworks.sh"; sourceTree = "<group>"; };
+		9F3485B88A727B549ABB3C3055097D56 /* Pods-TodoListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TodoListUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9FC808F90476270A0411DB0B06C3F343 /* Pods-TodoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TodoList.release.xcconfig"; sourceTree = "<group>"; };
+		A62B0425A1B26A0FAC0FED4175E48504 /* MGSwipeButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGSwipeButton.m; path = MGSwipeTableCell/MGSwipeButton.m; sourceTree = "<group>"; };
+		A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AD23CBF3DC34CFC586DC86F96F4D89BE /* Lato-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Lato-Regular.ttf"; path = "Source/Fonts/Lato-Regular.ttf"; sourceTree = "<group>"; };
+		AF7012BEA600F84B40F635C27D2D4081 /* LatoFont-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LatoFont-prefix.pch"; sourceTree = "<group>"; };
+		B8CB3AD3D834C954F82548988F315884 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB8DC59E41C90DF49E3FFF40569135A3 /* Pods-TodoListTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TodoListTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BE4D5FB605572893C3625F01E0A1CC64 /* Pods_TodoListUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TodoListUITests.framework; path = "Pods-TodoListUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C1ABD44863E8BC373D8F410778406D /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Lato-BoldItalic.ttf"; path = "Source/Fonts/Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		C55C580E1FC5B6E9F442FE42A9553FEA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		C9378838549CF15E6EA577280C3899B4 /* Pods-TodoListUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TodoListUITests.modulemap"; sourceTree = "<group>"; };
+		D0D027DD141CFB31826F389BB317011A /* Pods-TodoListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TodoListUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D39BE15C0248A95EAFB143F848768A77 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D406DC13341C83E1941AAA5F0E2848F6 /* Pods-TodoList-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TodoList-acknowledgements.plist"; sourceTree = "<group>"; };
+		D60D550997D7B75E7156CFCB8CB13FA3 /* Pods-TodoList-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TodoList-dummy.m"; sourceTree = "<group>"; };
+		D842A4754A09F846150196C9C686C86C /* LatoFont-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LatoFont-dummy.m"; sourceTree = "<group>"; };
+		DA208F77BF16A487FCA915DF39949F48 /* Lato-Black.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Lato-Black.ttf"; path = "Source/Fonts/Lato-Black.ttf"; sourceTree = "<group>"; };
+		DD4630AC5A80AABAC470FDD8F0771022 /* Pods-TodoListUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TodoListUITests-umbrella.h"; sourceTree = "<group>"; };
+		E258EDA55F76644FED82A2D8BB29E8B2 /* LatoFont.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LatoFont.xcconfig; sourceTree = "<group>"; };
+		E27D7E7E350AE165A5373098D4CAC896 /* Pods-TodoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TodoList.debug.xcconfig"; sourceTree = "<group>"; };
+		E35622B39E001A6F8304FC1950B7672F /* Pods-TodoListTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TodoListTests-resources.sh"; sourceTree = "<group>"; };
+		ECF5A3222B0F0C2EB1D72D990D43F1E1 /* Pods_TodoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TodoList.framework; path = "Pods-TodoList.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1B32C0F63C5C6954DDC91261DD0494F /* Pods-TodoListUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TodoListUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F314B65B0E1AB27A5D238D90AE523658 /* Pods-TodoList-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TodoList-frameworks.sh"; sourceTree = "<group>"; };
+		F6B229B954BF7E37D101A7CF2EDA2C02 /* LatoFont.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LatoFont.modulemap; sourceTree = "<group>"; };
+		F746623CCD6978028FE78FC499B2EC77 /* Pods-TodoList-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TodoList-umbrella.h"; sourceTree = "<group>"; };
+		FBD6EEF57855D5FCC111FC8A5CB31CD3 /* MGSwipeButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGSwipeButton.h; path = MGSwipeTableCell/MGSwipeButton.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44FA040AD0C67FB8AB75409D60DFC515 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87408956E94C43398E23C61433C2757A /* CoreText.framework in Frameworks */,
+				81647662CCA47E5E86BB59090D7F95E9 /* Foundation.framework in Frameworks */,
+				6C789E04E2AA8AA38BC54F97FCCB94E0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		571137524FF1B12A11C8AEE7DE3E0729 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87D1792AEFA51D19AA5EE9DB74E4517E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F86A802147CAEDCD5D2F69F78B5A758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89AB2AE681A8B73DCAFB0D9A2E44AB93 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6990691653206C24C7B2C9DE26CC39B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBA3905A72D4567744E15204880DAFCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7ACC8CC7477580B12B4BE938EE0F8E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5ECDA54DEAF37E8E05E3F9F4D49D9C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3740FAF5C71F37796B1924E1D184414 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		015843CA44719FAAA75F8FB4E339085C /* Pods-TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				D39BE15C0248A95EAFB143F848768A77 /* Info.plist */,
+				043C52A6F1E1CF001161A68455671EF9 /* Pods-TodoList.modulemap */,
+				72488EBF8CF3CD9543FF0B3C2B76431D /* Pods-TodoList-acknowledgements.markdown */,
+				D406DC13341C83E1941AAA5F0E2848F6 /* Pods-TodoList-acknowledgements.plist */,
+				D60D550997D7B75E7156CFCB8CB13FA3 /* Pods-TodoList-dummy.m */,
+				F314B65B0E1AB27A5D238D90AE523658 /* Pods-TodoList-frameworks.sh */,
+				03390ADFB4782FFDAE2005C8A58EC11F /* Pods-TodoList-resources.sh */,
+				F746623CCD6978028FE78FC499B2EC77 /* Pods-TodoList-umbrella.h */,
+				E27D7E7E350AE165A5373098D4CAC896 /* Pods-TodoList.debug.xcconfig */,
+				9FC808F90476270A0411DB0B06C3F343 /* Pods-TodoList.release.xcconfig */,
+			);
+			name = "Pods-TodoList";
+			path = "Target Support Files/Pods-TodoList";
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF1CA95E532A8F990E19506982FA04EE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2ED272D4428298B304CD63578A1C47A1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E3DDF74EE83B8A30EAE185F074167A2 /* Info.plist */,
+				F6B229B954BF7E37D101A7CF2EDA2C02 /* LatoFont.modulemap */,
+				E258EDA55F76644FED82A2D8BB29E8B2 /* LatoFont.xcconfig */,
+				D842A4754A09F846150196C9C686C86C /* LatoFont-dummy.m */,
+				AF7012BEA600F84B40F635C27D2D4081 /* LatoFont-prefix.pch */,
+				4E1F378BF93225409D34116BA2414EA2 /* LatoFont-umbrella.h */,
+				9722CC11F58E2E193650DB99CCB8A503 /* ResourceBundle-LatoFont-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LatoFont";
+			sourceTree = "<group>";
+		};
+		331129BE33ADFEF65B15D02B5D047FB1 /* Pods-TodoListTests */ = {
+			isa = PBXGroup;
+			children = (
+				B8CB3AD3D834C954F82548988F315884 /* Info.plist */,
+				54C06CEC496023E4DD71431A744B8365 /* Pods-TodoListTests.modulemap */,
+				BB8DC59E41C90DF49E3FFF40569135A3 /* Pods-TodoListTests-acknowledgements.markdown */,
+				85D9CD3210C10007772C76A40ACE73E7 /* Pods-TodoListTests-acknowledgements.plist */,
+				2B098955CD564658F33776EF9F8488D0 /* Pods-TodoListTests-dummy.m */,
+				20715D2F3D07AA8A851531F8F217D71E /* Pods-TodoListTests-frameworks.sh */,
+				E35622B39E001A6F8304FC1950B7672F /* Pods-TodoListTests-resources.sh */,
+				020595922268D9C342DD96B8E88E9A15 /* Pods-TodoListTests-umbrella.h */,
+				35CB576686EF5C8D279432C044054CCE /* Pods-TodoListTests.debug.xcconfig */,
+				80F75F50805A6F70EB8B550A814A9B57 /* Pods-TodoListTests.release.xcconfig */,
+			);
+			name = "Pods-TodoListTests";
+			path = "Target Support Files/Pods-TodoListTests";
+			sourceTree = "<group>";
+		};
+		4C6309CE64566064AED68BB4D015599B /* MGSwipeTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				FBD6EEF57855D5FCC111FC8A5CB31CD3 /* MGSwipeButton.h */,
+				A62B0425A1B26A0FAC0FED4175E48504 /* MGSwipeButton.m */,
+				92E4853C02CE1A1A41856B24F45BF503 /* MGSwipeTableCell.h */,
+				0EE176859251BB6ED18F3E7CBB819916 /* MGSwipeTableCell.m */,
+				ECD07155790653CF434BB48553CD9CA9 /* Support Files */,
+			);
+			name = MGSwipeTableCell;
+			path = MGSwipeTableCell;
+			sourceTree = "<group>";
+		};
+		679CDF046CD99C0AADADC0A33B947CCF /* Pods-TodoListUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6E97921B7E487947FC605CDC7BF5AE6C /* Info.plist */,
+				C9378838549CF15E6EA577280C3899B4 /* Pods-TodoListUITests.modulemap */,
+				963B09C2F225B771BB9CE71D56661ABD /* Pods-TodoListUITests-acknowledgements.markdown */,
+				F1B32C0F63C5C6954DDC91261DD0494F /* Pods-TodoListUITests-acknowledgements.plist */,
+				639EDA4145136E3ABCCFB7730AC1A9D7 /* Pods-TodoListUITests-dummy.m */,
+				983B7B0117056A1D325FF165DCA5EC0D /* Pods-TodoListUITests-frameworks.sh */,
+				4A58420AAF214E33FF0F6FC20F006717 /* Pods-TodoListUITests-resources.sh */,
+				DD4630AC5A80AABAC470FDD8F0771022 /* Pods-TodoListUITests-umbrella.h */,
+				D0D027DD141CFB31826F389BB317011A /* Pods-TodoListUITests.debug.xcconfig */,
+				9F3485B88A727B549ABB3C3055097D56 /* Pods-TodoListUITests.release.xcconfig */,
+			);
+			name = "Pods-TodoListUITests";
+			path = "Target Support Files/Pods-TodoListUITests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				985D3317DCF43EC4303B7ADB311967BC /* Pods */,
+				B2CC97A938546463801D6B4E3273E409 /* Products */,
+				C3B35EE130436CEC5CFD2B72CB9D5609 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		985D3317DCF43EC4303B7ADB311967BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9A1D557DD70941FD6F6923BD4E2D10B /* LatoFont */,
+				4C6309CE64566064AED68BB4D015599B /* MGSwipeTableCell */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B2CC97A938546463801D6B4E3273E409 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DD9AC1940EFDF2211BD7DC44C1FEAC0 /* LatoFont.bundle */,
+				3DB35B10F02A61C68D4A551B0FA84CDB /* LatoFont.framework */,
+				3E17D07CB39CC6635B11AF8F3901C464 /* MGSwipeTableCell.framework */,
+				ECF5A3222B0F0C2EB1D72D990D43F1E1 /* Pods_TodoList.framework */,
+				7F20678B9ACC8BF4B15CF0AE6B2FB48F /* Pods_TodoListTests.framework */,
+				BE4D5FB605572893C3625F01E0A1CC64 /* Pods_TodoListUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3B35EE130436CEC5CFD2B72CB9D5609 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				015843CA44719FAAA75F8FB4E339085C /* Pods-TodoList */,
+				331129BE33ADFEF65B15D02B5D047FB1 /* Pods-TodoListTests */,
+				679CDF046CD99C0AADADC0A33B947CCF /* Pods-TodoListUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D9A1D557DD70941FD6F6923BD4E2D10B /* LatoFont */ = {
+			isa = PBXGroup;
+			children = (
+				29EE96FFF44DC61DF6CEB58622AB792D /* UIFont+Lato.h */,
+				38F7DAB575068EE15E039E848C1D4E23 /* UIFont+Lato.m */,
+				F551CC12D0C5F9D50FB22706A5F97E7C /* Resources */,
+				2ED272D4428298B304CD63578A1C47A1 /* Support Files */,
+			);
+			name = LatoFont;
+			path = LatoFont;
+			sourceTree = "<group>";
+		};
+		ECD07155790653CF434BB48553CD9CA9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F4DDEABF698C135A743C9E3A52C0F22 /* Info.plist */,
+				44A0DF6C42B860289BA68FEEF6C7A82C /* MGSwipeTableCell.modulemap */,
+				80C35928D93F30C628DFC0A18F729359 /* MGSwipeTableCell.xcconfig */,
+				57E118E5539570E4AD112D83533A6FD1 /* MGSwipeTableCell-dummy.m */,
+				3935890E86F108B19E88313CE3C66358 /* MGSwipeTableCell-prefix.pch */,
+				266191FB3E3572DE4A01C5953895CC71 /* MGSwipeTableCell-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MGSwipeTableCell";
+			sourceTree = "<group>";
+		};
+		F551CC12D0C5F9D50FB22706A5F97E7C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA208F77BF16A487FCA915DF39949F48 /* Lato-Black.ttf */,
+				032491412929F778B67F0C92564FABAF /* Lato-BlackItalic.ttf */,
+				8C1A5AE5DE1E24D9A2A34C4DE7294CF2 /* Lato-Bold.ttf */,
+				C4C1ABD44863E8BC373D8F410778406D /* Lato-BoldItalic.ttf */,
+				4E77EE86F954B9C322D695CB44EF133F /* Lato-Hairline.ttf */,
+				9192EFBB0F06A7154ED87FC0DF62B24D /* Lato-HairlineItalic.ttf */,
+				11144622FAF1E0B16793A87E4D324152 /* Lato-Italic.ttf */,
+				95D2F727C4369A6D60D49D0FCB7B8316 /* Lato-Light.ttf */,
+				67DF80B83C3B09ABF5579FBA2551DA01 /* Lato-LightItalic.ttf */,
+				AD23CBF3DC34CFC586DC86F96F4D89BE /* Lato-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FF1CA95E532A8F990E19506982FA04EE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C55C580E1FC5B6E9F442FE42A9553FEA /* CoreText.framework */,
+				A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */,
+				27BE1AF8CEE8818CBCFD0010AE8BEE51 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		60763A650B6C8007ECC91753A617BAB1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4BF47046BA4675E1DA2F34893947702 /* MGSwipeButton.h in Headers */,
+				C9BB9572D929D9F65BD27F9AB29562EB /* MGSwipeTableCell-umbrella.h in Headers */,
+				853A57622AD74BC28B636A4BA38E6873 /* MGSwipeTableCell.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AECAC4EE03843E5CB906EDDFB031AF7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE810E4917FECB22D6AEA035547CB090 /* Pods-TodoListTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C77BE7B7E5F4556E20B6B165823D1A64 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E2EF3335CEC115B1676E4493F94D2F4 /* Pods-TodoList-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1637954E94875256D50D085C396BE35 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BCEC4AFD1B01B3597D567FE0AB0BC44 /* LatoFont-umbrella.h in Headers */,
+				499FF33C0104375324BF5D5B63A22422 /* UIFont+Lato.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DADBD47F2453F8AF9B3E01CF7A9527 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				400DA4F276146C7F37E900BACA6EF41A /* Pods-TodoListUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1CD80321715FDB12A3A31B7BCB09EA28 /* MGSwipeTableCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 782AD3C225DF6AF102A6DB24AFC59B5F /* Build configuration list for PBXNativeTarget "MGSwipeTableCell" */;
+			buildPhases = (
+				119E444BE35160E7AD3F82008DEF1E29 /* Sources */,
+				5F86A802147CAEDCD5D2F69F78B5A758 /* Frameworks */,
+				60763A650B6C8007ECC91753A617BAB1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MGSwipeTableCell;
+			productName = MGSwipeTableCell;
+			productReference = 3E17D07CB39CC6635B11AF8F3901C464 /* MGSwipeTableCell.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		58365CAB30D10D05E7D60B51B5A03648 /* Pods-TodoListUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDAFCAF1EACEF8ADC92455726C9DA565 /* Build configuration list for PBXNativeTarget "Pods-TodoListUITests" */;
+			buildPhases = (
+				25A1773F087469BFFD6D1A34C739468E /* Sources */,
+				571137524FF1B12A11C8AEE7DE3E0729 /* Frameworks */,
+				F8DADBD47F2453F8AF9B3E01CF7A9527 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TodoListUITests";
+			productName = "Pods-TodoListUITests";
+			productReference = BE4D5FB605572893C3625F01E0A1CC64 /* Pods_TodoListUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7A018905CA322B63D4E41FAA9D77968C /* Pods-TodoList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6861A9AAC07A1874FE1E9E5C4463F17 /* Build configuration list for PBXNativeTarget "Pods-TodoList" */;
+			buildPhases = (
+				7C620AEC46D46ACCFD968BD89B1CF06F /* Sources */,
+				CBA3905A72D4567744E15204880DAFCF /* Frameworks */,
+				C77BE7B7E5F4556E20B6B165823D1A64 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DECDFC6DCFCE5B59E62B41F1168B8012 /* PBXTargetDependency */,
+				6F8C966B2BFA9E337B7D3FB25735335F /* PBXTargetDependency */,
+			);
+			name = "Pods-TodoList";
+			productName = "Pods-TodoList";
+			productReference = ECF5A3222B0F0C2EB1D72D990D43F1E1 /* Pods_TodoList.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		942A9D7D01CE9FA0F2A9C8C1CC57951C /* LatoFont */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4352A7D86F025E02B70AC40A817B3E9 /* Build configuration list for PBXNativeTarget "LatoFont" */;
+			buildPhases = (
+				78EA4F85DAE9CFA8323162DBDB359A09 /* Sources */,
+				44FA040AD0C67FB8AB75409D60DFC515 /* Frameworks */,
+				3CCBA7BA158DEAF57C778F93F152BD65 /* Resources */,
+				E1637954E94875256D50D085C396BE35 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95C0B957ECA75573D01C761A2CCB95CD /* PBXTargetDependency */,
+			);
+			name = LatoFont;
+			productName = LatoFont;
+			productReference = 3DB35B10F02A61C68D4A551B0FA84CDB /* LatoFont.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		98AD8AC40C9BD58AB1043D843FBF441F /* Pods-TodoListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA2B29ADB8602FED43FCD532BFC42CC9 /* Build configuration list for PBXNativeTarget "Pods-TodoListTests" */;
+			buildPhases = (
+				CA0FCA637D8679EA819B2ECAAE1EF5B0 /* Sources */,
+				E5ECDA54DEAF37E8E05E3F9F4D49D9C5 /* Frameworks */,
+				8AECAC4EE03843E5CB906EDDFB031AF7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TodoListTests";
+			productName = "Pods-TodoListTests";
+			productReference = 7F20678B9ACC8BF4B15CF0AE6B2FB48F /* Pods_TodoListTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DE8F2EA6BBEA8FD641321B92F8BA8C2B /* LatoFont-LatoFont */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE8BABD1B77B1FF8531726075DC411E4 /* Build configuration list for PBXNativeTarget "LatoFont-LatoFont" */;
+			buildPhases = (
+				1B8535B1E65A076F2B01B51F93E9CEA4 /* Sources */,
+				B6990691653206C24C7B2C9DE26CC39B /* Frameworks */,
+				65C28337762D925FD5FB4EDE7737F202 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LatoFont-LatoFont";
+			productName = "LatoFont-LatoFont";
+			productReference = 1DD9AC1940EFDF2211BD7DC44C1FEAC0 /* LatoFont.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B2CC97A938546463801D6B4E3273E409 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				942A9D7D01CE9FA0F2A9C8C1CC57951C /* LatoFont */,
+				DE8F2EA6BBEA8FD641321B92F8BA8C2B /* LatoFont-LatoFont */,
+				1CD80321715FDB12A3A31B7BCB09EA28 /* MGSwipeTableCell */,
+				7A018905CA322B63D4E41FAA9D77968C /* Pods-TodoList */,
+				98AD8AC40C9BD58AB1043D843FBF441F /* Pods-TodoListTests */,
+				58365CAB30D10D05E7D60B51B5A03648 /* Pods-TodoListUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CCBA7BA158DEAF57C778F93F152BD65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DDE6582B79F9FACEC96939D6E8F4AEE /* LatoFont.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65C28337762D925FD5FB4EDE7737F202 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCACE678B70021485804DA8A3C8ACE4 /* Lato-Black.ttf in Resources */,
+				938FB262A8F31934EA530F1AB86A3F3A /* Lato-BlackItalic.ttf in Resources */,
+				EE2DEE42051C135B4A982C05E02A5367 /* Lato-Bold.ttf in Resources */,
+				90F5892B40BD38B69E8D88C958373A8A /* Lato-BoldItalic.ttf in Resources */,
+				CAC2C9F67E42ECAD602108ACCA8706DD /* Lato-Hairline.ttf in Resources */,
+				7AE1D4765B31AC40AF3D774705CD04FC /* Lato-HairlineItalic.ttf in Resources */,
+				0C98CFEC996DEEB10E39FC50845A3D21 /* Lato-Italic.ttf in Resources */,
+				82ED0C7CC376B8FFC2E8A7E81074B17C /* Lato-Light.ttf in Resources */,
+				A641892548994B7BDCBB6BCC9383C524 /* Lato-LightItalic.ttf in Resources */,
+				B2E4E6A261F20F48A7B7E0F50AFAD415 /* Lato-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		119E444BE35160E7AD3F82008DEF1E29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112B3AE3695C10E75BD89585295481AB /* MGSwipeButton.m in Sources */,
+				6CA804342026C8DD0D47F82901AE587D /* MGSwipeTableCell-dummy.m in Sources */,
+				DB33341B93BFF0A556A6F333BE95CFAD /* MGSwipeTableCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B8535B1E65A076F2B01B51F93E9CEA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25A1773F087469BFFD6D1A34C739468E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63B8D5E8DA289CB9C05813E23D9C2707 /* Pods-TodoListUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78EA4F85DAE9CFA8323162DBDB359A09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA6B53A709CB76C3EA03E5CA68A605F /* LatoFont-dummy.m in Sources */,
+				87015FBC04C616C1285E60A47D25419A /* UIFont+Lato.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C620AEC46D46ACCFD968BD89B1CF06F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				408C8CBBF21A749B36F7F1A5AF805EF9 /* Pods-TodoList-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA0FCA637D8679EA819B2ECAAE1EF5B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B625224036B29DC4BD02FE8C319474 /* Pods-TodoListTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F8C966B2BFA9E337B7D3FB25735335F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MGSwipeTableCell;
+			target = 1CD80321715FDB12A3A31B7BCB09EA28 /* MGSwipeTableCell */;
+			targetProxy = DFCA51E570436C803823686A380C5ED8 /* PBXContainerItemProxy */;
+		};
+		95C0B957ECA75573D01C761A2CCB95CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LatoFont-LatoFont";
+			target = DE8F2EA6BBEA8FD641321B92F8BA8C2B /* LatoFont-LatoFont */;
+			targetProxy = 50A850BC869F11CB26EBCFE0B5E9D9B4 /* PBXContainerItemProxy */;
+		};
+		DECDFC6DCFCE5B59E62B41F1168B8012 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LatoFont;
+			target = 942A9D7D01CE9FA0F2A9C8C1CC57951C /* LatoFont */;
+			targetProxy = 64B3DB4DEF9F1773AAD24EB926DBE32A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		115DA480AA35DE1EDAC179C36CA4932E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E258EDA55F76644FED82A2D8BB29E8B2 /* LatoFont.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LatoFont/LatoFont-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LatoFont/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LatoFont/LatoFont.modulemap";
+				PRODUCT_NAME = LatoFont;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		13B5CEBF3B42CF105818081B535F6119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E258EDA55F76644FED82A2D8BB29E8B2 /* LatoFont.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LatoFont";
+				INFOPLIST_FILE = "Target Support Files/LatoFont/ResourceBundle-LatoFont-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = LatoFont;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1F439C77DFCE19C82DDF0C855D442916 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80C35928D93F30C628DFC0A18F729359 /* MGSwipeTableCell.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MGSwipeTableCell/MGSwipeTableCell-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MGSwipeTableCell/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MGSwipeTableCell/MGSwipeTableCell.modulemap";
+				PRODUCT_NAME = MGSwipeTableCell;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5E904906DF4A07D69D0E6A13E2261077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E258EDA55F76644FED82A2D8BB29E8B2 /* LatoFont.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LatoFont";
+				INFOPLIST_FILE = "Target Support Files/LatoFont/ResourceBundle-LatoFont-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = LatoFont;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		5FB3DB56D1978FFC1232466275859559 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80C35928D93F30C628DFC0A18F729359 /* MGSwipeTableCell.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MGSwipeTableCell/MGSwipeTableCell-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MGSwipeTableCell/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MGSwipeTableCell/MGSwipeTableCell.modulemap";
+				PRODUCT_NAME = MGSwipeTableCell;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		66EC1AC1116197F66263268D849E5CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E258EDA55F76644FED82A2D8BB29E8B2 /* LatoFont.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LatoFont/LatoFont-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LatoFont/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LatoFont/LatoFont.modulemap";
+				PRODUCT_NAME = LatoFont;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7AC3D29DC19BAB1CD1C5B7C3A25554D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E27D7E7E350AE165A5373098D4CAC896 /* Pods-TodoList.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TodoList/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TodoList/Pods-TodoList.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TodoList;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		925EAABD5CEBBF7686B8C51BE063420C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35CB576686EF5C8D279432C044054CCE /* Pods-TodoListTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TodoListTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TodoListTests/Pods-TodoListTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TodoListTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9A81896006C177A2E394387448CFB8B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FC808F90476270A0411DB0B06C3F343 /* Pods-TodoList.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TodoList/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TodoList/Pods-TodoList.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TodoList;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7814E937262701CCDE149EB7D7B6D08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0D027DD141CFB31826F389BB317011A /* Pods-TodoListUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TodoListUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TodoListUITests/Pods-TodoListUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TodoListUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DC850AAD47D2A4FCBACFC742C10F5B01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80F75F50805A6F70EB8B550A814A9B57 /* Pods-TodoListTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TodoListTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TodoListTests/Pods-TodoListTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TodoListTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E46DBBA90C12721E8E851C79154017DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F3485B88A727B549ABB3C3055097D56 /* Pods-TodoListUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TodoListUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TodoListUITests/Pods-TodoListUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TodoListUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C5BC78A31CDE101068C530CAC7FA0F /* Debug */,
+				89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		782AD3C225DF6AF102A6DB24AFC59B5F /* Build configuration list for PBXNativeTarget "MGSwipeTableCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F439C77DFCE19C82DDF0C855D442916 /* Debug */,
+				5FB3DB56D1978FFC1232466275859559 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4352A7D86F025E02B70AC40A817B3E9 /* Build configuration list for PBXNativeTarget "LatoFont" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				115DA480AA35DE1EDAC179C36CA4932E /* Debug */,
+				66EC1AC1116197F66263268D849E5CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6861A9AAC07A1874FE1E9E5C4463F17 /* Build configuration list for PBXNativeTarget "Pods-TodoList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AC3D29DC19BAB1CD1C5B7C3A25554D4 /* Debug */,
+				9A81896006C177A2E394387448CFB8B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE8BABD1B77B1FF8531726075DC411E4 /* Build configuration list for PBXNativeTarget "LatoFont-LatoFont" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E904906DF4A07D69D0E6A13E2261077 /* Debug */,
+				13B5CEBF3B42CF105818081B535F6119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA2B29ADB8602FED43FCD532BFC42CC9 /* Build configuration list for PBXNativeTarget "Pods-TodoListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				925EAABD5CEBBF7686B8C51BE063420C /* Debug */,
+				DC850AAD47D2A4FCBACFC742C10F5B01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDAFCAF1EACEF8ADC92455726C9DA565 /* Build configuration list for PBXNativeTarget "Pods-TodoListUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7814E937262701CCDE149EB7D7B6D08 /* Debug */,
+				E46DBBA90C12721E8E851C79154017DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
