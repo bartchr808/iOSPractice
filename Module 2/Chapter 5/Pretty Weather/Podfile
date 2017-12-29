@@ -1,0 +1,27 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Pretty Weather' do
+  use_frameworks!
+  inhibit_all_warnings!
+
+  # Pods for Pretty Weather
+  pod 'Cartography', :git => "https://github.com/robb/Cartography.git", :tag => '0.6.0'
+  pod 'Alamofire', '~> 2.0'
+  pod 'SwiftyJSON', '~> 2.3.0'
+  pod 'WeatherIconsKit', :git => "https://github.com/gscalzo/WeatherIconsKit"
+  pod 'FlickrKit', '~> 1.0.5'
+  pod 'FXBlurView', '~> 1.6.4'
+  pod 'LatoFont', :git => "https://github.com/gscalzo/LatoFont.git"
+
+  target 'Pretty WeatherTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Pretty WeatherUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
