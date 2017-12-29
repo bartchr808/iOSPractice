@@ -115,7 +115,7 @@ extension EditTodoTableViewController {
 extension EditTodoTableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let identifier = segue.identifier,
-            let destinationViewController = segue.destination as? ListTableViewController  else {
+            let destinationViewController = segue.destination as? ListTableViewController else {
             return
         }
         
