@@ -6,12 +6,12 @@ target 'Pretty Weather' do
   inhibit_all_warnings!
 
   # Pods for Pretty Weather
-  pod 'Cartography', :git => "https://github.com/robb/Cartography.git", :tag => '0.6.0'
-  pod 'Alamofire', '~> 2.0'
-  pod 'SwiftyJSON', '~> 2.3.0'
+  pod 'Cartography', :git => "https://github.com/robb/Cartography.git"
+  pod 'Alamofire'
+  pod 'SwiftyJSON', '~> 4.0.0-alpha'
   pod 'WeatherIconsKit', :git => "https://github.com/gscalzo/WeatherIconsKit"
-  pod 'FlickrKit', '~> 1.0.5'
-  pod 'FXBlurView', '~> 1.6.4'
+  pod 'FlickrKit'
+  pod 'FXBlurView'
   pod 'LatoFont', :git => "https://github.com/gscalzo/LatoFont.git"
 
   target 'Pretty WeatherTests' do

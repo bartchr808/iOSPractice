@@ -10,13 +10,13 @@
 		44E03F075D5455852379028B /* Pods_Pretty_WeatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2693B6638743B7C900169F7 /* Pods_Pretty_WeatherTests.framework */; };
 		BACAD6E3F6B3A98E2D894DA8 /* Pods_Pretty_WeatherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27D4E924228124D2C5B2D90 /* Pods_Pretty_WeatherUITests.framework */; };
 		CCD39EBF1FF6F1CE00E9D8F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD39EBE1FF6F1CE00E9D8F6 /* AppDelegate.swift */; };
-		CCD39EC11FF6F1CE00E9D8F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD39EC01FF6F1CE00E9D8F6 /* ViewController.swift */; };
 		CCD39EC41FF6F1CE00E9D8F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD39EC21FF6F1CE00E9D8F6 /* Main.storyboard */; };
 		CCD39EC61FF6F1CE00E9D8F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD39EC51FF6F1CE00E9D8F6 /* Assets.xcassets */; };
 		CCD39EC91FF6F1CE00E9D8F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD39EC71FF6F1CE00E9D8F6 /* LaunchScreen.storyboard */; };
 		CCD39ED41FF6F1CE00E9D8F6 /* Pretty_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD39ED31FF6F1CE00E9D8F6 /* Pretty_WeatherTests.swift */; };
 		CCD39EDF1FF6F1CE00E9D8F6 /* Pretty_WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD39EDE1FF6F1CE00E9D8F6 /* Pretty_WeatherUITests.swift */; };
 		CCD39EED1FF6F20B00E9D8F6 /* PrettyWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD39EEC1FF6F20B00E9D8F6 /* PrettyWeatherViewController.swift */; };
+		CCDC6D781FF727D900AABE0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDC6D771FF727D900AABE0F /* ViewController.swift */; };
 		D4EDE08D1630165F5EF1FB6A /* Pods_Pretty_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05D31A0433FF2E2E889498C /* Pods_Pretty_Weather.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +45,6 @@
 		B05D31A0433FF2E2E889498C /* Pods_Pretty_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pretty_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD39EBB1FF6F1CE00E9D8F6 /* Pretty Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pretty Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD39EBE1FF6F1CE00E9D8F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CCD39EC01FF6F1CE00E9D8F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CCD39EC31FF6F1CE00E9D8F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCD39EC51FF6F1CE00E9D8F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCD39EC81FF6F1CE00E9D8F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +56,7 @@
 		CCD39EDE1FF6F1CE00E9D8F6 /* Pretty_WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pretty_WeatherUITests.swift; sourceTree = "<group>"; };
 		CCD39EE01FF6F1CE00E9D8F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCD39EEC1FF6F20B00E9D8F6 /* PrettyWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyWeatherViewController.swift; sourceTree = "<group>"; };
+		CCDC6D771FF727D900AABE0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D637B9A2882C5248365A2821 /* Pods-Pretty Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pretty Weather.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pretty Weather/Pods-Pretty Weather.release.xcconfig"; sourceTree = "<group>"; };
 		DACE907E5F3A8FA98BD0998F /* Pods-Pretty Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pretty Weather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pretty Weather/Pods-Pretty Weather.debug.xcconfig"; sourceTree = "<group>"; };
 		E2693B6638743B7C900169F7 /* Pods_Pretty_WeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pretty_WeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,8 +141,8 @@
 			children = (
 				CCD39EBE1FF6F1CE00E9D8F6 /* AppDelegate.swift */,
 				CCD39EEC1FF6F20B00E9D8F6 /* PrettyWeatherViewController.swift */,
-				CCD39EC01FF6F1CE00E9D8F6 /* ViewController.swift */,
 				CCD39EC21FF6F1CE00E9D8F6 /* Main.storyboard */,
+				CCDC6D771FF727D900AABE0F /* ViewController.swift */,
 				CCD39EC51FF6F1CE00E9D8F6 /* Assets.xcassets */,
 				CCD39EC71FF6F1CE00E9D8F6 /* LaunchScreen.storyboard */,
 				CCD39ECA1FF6F1CE00E9D8F6 /* Info.plist */,
@@ -473,7 +473,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCD39EC11FF6F1CE00E9D8F6 /* ViewController.swift in Sources */,
+				CCDC6D781FF727D900AABE0F /* ViewController.swift in Sources */,
 				CCD39EBF1FF6F1CE00E9D8F6 /* AppDelegate.swift in Sources */,
 				CCD39EED1FF6F20B00E9D8F6 /* PrettyWeatherViewController.swift in Sources */,
 			);

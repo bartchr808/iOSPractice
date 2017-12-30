@@ -7,28 +7,54 @@
 //
 
 import UIKit
+import Cartography
 
 class PrettyWeatherViewController: UIViewController {
+    
+    private let backgroundView = UIImageView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        setup()
+        layoutView()
+        style()
+        render(image: UIImage(named: "DefaultImage"))
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+// MARK: - Setup
+private extension PrettyWeatherViewController {
+    func setup() {
+        backgroundView.contentMode = .scaleAspectFill
+        backgroundView.clipsToBounds = true
+        view.addSubview(backgroundView)
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+// MARK: - Layout
+extension PrettyWeatherViewController {
+    func layoutView() {
+        constrain(backgroundView) { view in
+            view.top == view.superview!.top
+            view.bottom == view.superview!.bottom
+            view.left == view.superview!.left
+            view.right == view.superview!.right
+        }
     }
-    */
+}
 
+// MARK: - Render
+private extension PrettyWeatherViewController {
+    func render(image: UIImage?) {
+        if let image = image {
+            backgroundView.image = image
+        }
+    }
+}
+
+// Mark: - Style
+private extension PrettyWeatherViewController {
+    func style() {
+        
+    }
 }
