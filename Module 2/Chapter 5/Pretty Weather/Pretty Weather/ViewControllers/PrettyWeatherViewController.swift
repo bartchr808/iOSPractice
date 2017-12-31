@@ -17,6 +17,7 @@ class PrettyWeatherViewController: UIViewController {
         }
     }
     
+    private let gradientView = UIView()
     private let backgroundView = UIImageView()
     private let scrollView = UIScrollView()
     private let currentWeatherView = CurrentWeatherView(frame: CGRect.zero)
@@ -29,15 +30,19 @@ class PrettyWeatherViewController: UIViewController {
         layoutView()
         style()
         render(image: UIImage(named: "DefaultImage"))
+        renderSubviews()
     }
 }
 
 // MARK: - Setup
 private extension PrettyWeatherViewController {
     func setup() {
+        
         backgroundView.contentMode = .scaleAspectFill
         backgroundView.clipsToBounds = true
         view.addSubview(backgroundView)
+        view.addSubview(gradientView)
+        
         scrollView.showsVerticalScrollIndicator = false
         scrollView.addSubview(currentWeatherView)
         scrollView.addSubview(hourlyForecastView)
@@ -80,6 +85,10 @@ extension PrettyWeatherViewController {
         constrain(currentWeatherView) {
             $0.top == $0.superview!.top + currentWeatherInsect
         }
+        
+        constrain(gradientView) {
+            $0.edges == $0.superview!.edges
+        }
     }
 }
 
@@ -90,12 +99,20 @@ private extension PrettyWeatherViewController {
             backgroundView.image = image
         }
     }
+    func renderSubviews() {
+        currentWeatherView.render()
+    }
 }
 
-// Mark: - Style
+// MARK: - Style
 private extension PrettyWeatherViewController {
     func style() {
-        
+        let gradient = CAGradientLayer()
+        gradient.frame = view.bounds
+        let clearColor = UIColor(white: 0, alpha: 0).cgColor
+        let blackColor = UIColor(white: 0, alpha: 0.7).cgColor
+        gradient.colors = [clearColor, blackColor]
+        gradientView.layer.insertSublayer(gradient, at: 0)
     }
 }
 

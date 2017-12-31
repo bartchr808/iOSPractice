@@ -53,7 +53,12 @@ class CurrentWeatherView: UIView {
 // MARK: - Setup
 private extension CurrentWeatherView {
     func setup() {
-        
+        addSubview(cityLbl)
+        addSubview(currentTempLbl)
+        addSubview(maxTempLbl)
+        addSubview(minTempLbl)
+        addSubview(iconLbl)
+        addSubview(weatherLbl)
     }
 }
 
@@ -104,6 +109,33 @@ private extension CurrentWeatherView {
 // MARK: - Style
 private extension CurrentWeatherView {
     func style() {
-        backgroundColor = UIColor.red
+        iconLbl.textColor = UIColor.white
+        weatherLbl.font = UIFont.latoLightFont(ofSize: 20)
+        weatherLbl.textColor = UIColor.white
+        
+        currentTempLbl.font = UIFont.latoLightFont(ofSize: 96)
+        currentTempLbl.textColor = UIColor.white
+        
+        maxTempLbl.font = UIFont.latoLightFont(ofSize: 18)
+        maxTempLbl.textColor = UIColor.white
+        
+        minTempLbl.font = UIFont.latoLightFont(ofSize: 18)
+        minTempLbl.textColor = UIColor.white
+        
+        cityLbl.font = UIFont.latoLightFont(ofSize: 18)
+        cityLbl.textColor = UIColor.white
+        cityLbl.textAlignment = .right
+    }
+}
+
+// MARK: Render
+extension CurrentWeatherView{
+    func render(){
+        iconLbl.attributedText = WIKFontIcon.wiDaySunnyIcon(withSize: 20).attributedString()
+        weatherLbl.text = "Sunny"
+        minTempLbl.text = "4°"
+        maxTempLbl.text = "10°"
+        currentTempLbl.text = "6°"
+        cityLbl.text = "London"
     }
 }
